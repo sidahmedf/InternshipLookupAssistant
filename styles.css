@@ -1,0 +1,124 @@
+body {
+  font-family: 'Roboto', sans-serif; /* Default font */
+  padding: 1.5rem;
+  background-color: #343a40;
+  color: #e9ecef;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #f8f9fa;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem; /* Larger header */
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ced4da;
+}
+
+#timer, #counter {
+  font-size: 1.75rem;
+  font-weight: 700; /* Bold text */
+  color: #f1f3f5;
+  letter-spacing: 0.5px;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.timer, .counter {
+  flex: 1;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.8rem;
+  border: 1px solid #495057;
+}
+
+th {
+  background-color: #6c757d;
+}
+
+button {
+  background-color: #6c757d;
+  color: #f8f9fa;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #495057;
+}
+
+p {
+  font-size: 1rem;
+  color: #dee2e6;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  color: #f8f9fa;
+  font-size: 1.75rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+a {
+  color: #17a2b8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers buttons horizontally */
+  align-items: center; /* Centers buttons vertically (if height is defined) */
+  margin-top: 1.5rem; /* Optional: Add spacing above the container */
+  gap: 1rem; /* Adds spacing between buttons */
+}

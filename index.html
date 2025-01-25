@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assistant Recherche de Stage</title>
+  <!-- Google Fonts - Roboto and Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+  <main>
+    <section class="flex-container">
+      <div class="timer">
+        <hgroup>
+          <h2>Temps écoulé depuis le début</h2>
+        </hgroup>
+        <p><strong id="timer">Calcul en cours...</strong></p>
+      </div>
+
+      <div class="counter">
+        <hgroup>
+          <h2>Candidatures envoyées</h2>
+        </hgroup>
+        <p><strong id="counter">0</strong> candidatures envoyées</p>
+      </div>
+    </section>
+
+    <div class="button-container">
+      <button onclick="finishSession()">Finish Session</button>
+    </div>
+
+    <section class="statistics">
+      <hgroup>
+        <h2>Statistiques des soumissions</h2>
+      </hgroup>
+      <table>
+        <thead>
+          <tr>
+            <th>Société</th>
+            <th>Ville</th>
+            <th>Mission principale</th>
+            <th>Lien vers l'offre</th>
+            <th>Date de soumission</th>
+          </tr>
+        </thead>
+        <tbody id="stats-body">
+        </tbody>
+      </table>
+    </section>
+    <div class="button-container">
+      <button onclick="addEntry()">Ajouter une entrée</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script> <!-- Link to external JS file -->
+</body>
+</html>
